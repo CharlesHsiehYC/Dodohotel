@@ -1,0 +1,98 @@
+body{
+    background: url(../FMLAB.PHOTO/dog/會員背景.jpg
+    )no-repeat center / cover;
+}
+
+.content {
+    width: 1900px;
+    height: 900px;
+    /* background-color: #FFF8DC; */
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .item1 {
+    width: 300px;
+    height: 300px;
+    background-color: #FFF8DC;
+    margin: 250px 200px 50px 200px;
+} */
+
+.item2 {
+    width: 300px;
+    height: 300px;
+    /* background-color: #FFF8DC; */
+    margin: 200px 10px 50px 1000px;
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+.item3 {
+    width: 300px;
+    height: 300px;
+    /* background-color: #FFF8DC; */
+    margin: 200px 10px 50px 40px;
+    font-size: 20px;
+}
+
+#member {
+    background-color: #90EE90;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#memberin {
+    width: 300px;
+    height: 302px;
+    border-style: none;
+    line-height: 60px;
+
+}
+
+input {
+    border: 1px;
+}
+
+#buttonin {
+    border: 0;
+    background-color: #90EE90;
+    color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    cursor: pointer;
+}
+
+#buttonin:hover {
+    color: #90EE90;
+    background-color: #fff;
+    border: 2px #90EE90 solid;
+    transition: 0.5s;
+}
+
+#buttonout {
+    border: 0;
+    background-color: #ADD8E6;
+    color: #fff;
+    border-radius: 0px 0px 10px 10px; 
+    cursor: pointer;
+}
+
+#buttonout:hover {
+    color:#ADD8E6;
+    background-color: #fff;
+    border: 2px #ADD8E6 solid;
+    transition: 0.5s;
+}
+
+.inputin{
+    background: none;
+    font-size: 18px;
+    
+}
+
+.inputout{
+    background: none;
+    font-size: 18px;     
+    
+}
+

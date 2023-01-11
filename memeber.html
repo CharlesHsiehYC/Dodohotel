@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/會員專區.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">DoDo</label>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="dodoidea.html">嘟嘟理念</a></li>
+            <li><a href="pricelist.html">價目表</a></li>
+            <li><a href="QA.html">Q&A</a></li>
+            <li><a a class="active" href="memeber.html">會員</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <!-- <div class="item1"><img src="./FMLAB.PHOTO/會員圖片.jpg" alt=""></div> -->
+        <div class="item2">
+            <fieldset style="border-radius: 10px;">
+                <h2 id="member">&ensp; 會員登入</h2>
+                <fieldset id="memberin">
+                    <input style="width:270px;height:35px; margin: 10px; border-radius: 10px; " type="text"
+                        name="myname" id="myname" class="inputin" placeholder="請輸入帳號"><br>
+                    <input style="width:270px;height:35px; margin: 10px; border-radius: 10px;" type="password"
+                        name="password" id="password" class="inputin" placeholder="請輸入密碼"><br>
+                    &ensp;&ensp;<input type="checkbox" class="custom-control-input" id="remember" name="remember"
+                        value="1">
+                    <label class="custom-control-label" for="remember" style="font-size: 16px;">記住帳號</label><br>
+                    <div style="text-align: center; font-size: 16px;"><a href="memberforgetpassword.html">忘記密碼?</a>
+                    </div>
+                    <div id="buttonin">
+                        <input id="buttonin" type="button" value="登入" name="登入"
+                            style="width:290px;height:60px; border-style: none;" onclick="showMsg()">
+                        <!-- style="background-color: #90EE90; color: white; width: 300px; height: 40px; border-radius: 10px; border-style:none;" -->
+                    </div>
+                </fieldset>
+            </fieldset>
+        </div>
+
+        <div class="item3">
+            <fieldset style="border-radius: 10px; height: 406px;">
+                <h2 id="member" style="background: #ADD8E6;">&ensp; 註冊成為會員</h2>
+                <form id="lis" action="首頁.html"></form>
+                <fieldset id="memberin">
+                    <input style="width:270px;height:35px; margin: 10px; border-radius: 10px;" type="text" name="myname"
+                        id="becomaccount" class="inputout" placeholder="帳號"><br>
+                    <input style="width:270px;height:35px; margin: 10px; border-radius: 10px;" type="text"
+                        name="becomename" id="becomename" class="inputout" placeholder="姓名/暱稱"><br>
+                    <input style="width:270px;height:35px; margin: 10px; border-radius: 10px;" type="text" name="phone"
+                        id="phone" class="inputout" placeholder="行動電話"><br>
+                    <input style="width:270px;height:35px; margin: 10px; border-radius: 10px;" type="password"
+                        name="becomepassword" id="becomepassword" class="inputout" placeholder="密碼"><br>
+                    <input style="width:270px;height:35px; margin: 10px; border-radius: 10px;" type="password"
+                        name="becomepasswordcheck" id="becomepasswordcheck" class="inputout" placeholder="確認密碼"><br>
+                    <div id="buttonout">
+                        <input id="buttonout" type="button" value="送出" name="送出"
+                            style="width:290px;height:60px; border-style: none;" onclick="showok()">
+                        <!-- style="background-color: #90EE90; color: white; width: 300px; height: 40px; border-radius: 10px; border-style:none;" -->
+                </fieldset>
+            </fieldset>
+
+        </div>
+    </div>
+    <script>
+        function showMsg() {
+            alert("登入成功")
+        }
+
+        function showok() {
+            alert("註冊成功")
+        }
+
+        // var myname = getelementbyid("becomaccount");
+
+        // // $(document).ready(function () {
+        // //     $("#buttonout").on("click".function(){
+        // //         if($("#becomaccount").val == ""){
+        // //         alert("請輸入帳號");
+        // //     }
+        // // })
+        // // }
+
+        // $(document).ready(function () {
+
+        //     $("#buttonout").on("click", function () {
+        //         if ($("#becomaccoun").val() == "") {
+        //             alert("尚未填寫姓名");
+        //         } else if ($("#phone").val() == "") {
+        //             alert("尚未填寫手機電話");
+        //         } else if ($("#birthday").val() == "") {
+        //             alert("尚未填寫生日");
+        //         } else if ($("#iden").val() == "") {
+        //             alert("尚未填寫身分證");
+        //         } else if ($("#account").val() == "") {
+        //             alert("尚未填寫申請帳號");
+        //         } else if ($("#password").val() == "") {
+        //             alert("尚未填寫申請密碼");
+        //         } else if ($("#password_2").val() == "") {
+        //             alert("尚未填寫確認密碼");
+        //         } else if ($("#mail").val() == "") {
+        //             alert("尚未填寫信箱");
+        //         } else if ($("#password").val() != $("#password_2").val()) {
+        //             alert("密碼錯誤，請重新確認密碼");
+        //         } else {
+        //             alert("申請帳號完畢，請至首頁登入");
+        //             document.lis.button();
+        //         }
+        //     })
+        //     $("#buttonout").on("click".function(){
+        //         if($("#becomaccount").val() == ""){
+        //         alert("請輸入帳號");
+        //     } else {
+        //         alert("請至會員專區登入");
+        //         document.lis.submit();
+        //     }
+        // })
+        // }
+    </script>
+</body>
+
+</html>
